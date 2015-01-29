@@ -41,6 +41,10 @@ abstract class CompositeNode extends Node {
 		return sizeof($this->childrens) > 0 ? $this->childrens[sizeof($this->childrens)-1] : NULL;           
 	}
 	
+	public function afterNode() {
+		return NULL;
+	}
+	
 	
 	/**
 	* @return string

@@ -67,6 +67,13 @@ abstract class NodeAddeded {
 		$addeded->tryAdd(); 
 		return $addeded;
     } 
+	
+	/**
+	* @return Parser
+	*/
+	final public function  getParser() {
+		return $this->parser;
+	} 
     
     /**
      * 

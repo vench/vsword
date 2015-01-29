@@ -1,4 +1,7 @@
 <?php
+/**
+* The example creates a table from an array
+*/
 
 require_once '../vsword/VsWord.php'; 
 VsWord::autoLoad();
@@ -86,5 +89,7 @@ foreach($data as $item) {
 		}
 	}
 }
+
+echo '<pre>'.($doc->getDocument()->getBody()->look()).'</pre>';
 
 $doc->saveAs('./table2.docx');

@@ -3,8 +3,9 @@
 
 
 /**
- * Description of ArbitraryNode
+ * Class ArbitraryNode
  *
+ * @version 1.0.2
  * @author v.raskin
  */
 class ArbitraryNode extends Node {
@@ -17,7 +18,15 @@ class ArbitraryNode extends Node {
 		}
 	}
 	
-    	public function getWord() {
+	public function getName() {
+		return $this->name;
+	}
+	
+    public function getWord() {
 		return '<'.$this->name.$this->attributeToString().'/>';
+	}
+	
+	public function __toString() {
+		return get_class($this).':'.$this->name;
 	}
 }

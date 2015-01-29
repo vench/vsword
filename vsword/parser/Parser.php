@@ -24,14 +24,14 @@ abstract class Parser {
 	
 	/**
 	* @param string $tagName
-	* @param string $attributeStr
+	* @param string $attributes
 	* @return Node
 	*/
-	public function initNode($tagName, $attributeStr = NULL) {
-		if(sizeof($this->handlersInitNode)) {
-			$attribute = $this->attributeStrToArray($attributeStr); 
+	public function initNode($tagName, $attributes = NULL) {
+		if(sizeof($this->handlersInitNode)) {  
+			$attributes = is_array($attributes) ? $attributes : $this->attributeStrToArray($attributes); 
 			foreach($this->handlersInitNode as $handler) { 
-				if(!is_null($node = $handler->initNode($tagName, $attribute))) {
+				if(!is_null($node = $handler->initNode($tagName, $attributes))) {
 					return $node;
 				}
 			}
@@ -43,9 +43,9 @@ abstract class Parser {
 	* @param string $attributeStr
 	* @return array
 	*/
-	protected function attributeStrToArray($attributeStr) {
+	protected function attributeStrToArray($attributeStr) { 
 		$attr = array();
-		
+		$attributeStr = trim($attributeStr);
 		$l = strlen($attributeStr);
 		$key = '';
 		$value = '';

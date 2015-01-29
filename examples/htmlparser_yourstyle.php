@@ -13,13 +13,13 @@ class MyInitNode implements IInitNode {
 	* @param mixed $attributes
 	* @return Node
 	*/
-	function initNode($tagName, $attributes) {
+	function initNode($tagName, $attributes) {   
 		if($tagName == 'p' && isset($attributes['class']) && $attributes['class'] == 'BigText') {
 				$p = new PCompositeNode();
 			    $r = new RCompositeNode();
 			    $p->addNode($r); 
 			    $r->addTextStyle(new BoldStyleNode());
-			    $r->addTextStyle(new FontSizeStyleNode(36)); 
+			    $r->addTextStyle(new FontSizeStyleNode(36));  
 			    return $p;
 		}
 		return NULL;

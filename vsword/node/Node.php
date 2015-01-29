@@ -3,7 +3,7 @@
 /**
 *  Class Node
 * 
-*  @version 1.0.0
+*  @version 1.0.1
 *  @author v.raskin
 */
 abstract class Node implements INode {
@@ -31,6 +31,10 @@ abstract class Node implements INode {
 	 */
 	public function getParent() {
 		return $this->parent;
+	}
+	
+	public function getName() {
+		return get_class($this);
 	}
 	
 	public function setStyleID($styleId) {
@@ -61,6 +65,10 @@ abstract class Node implements INode {
 		foreach($attributes as $key=>$value) {
 			$this->addAttribute($key, $value);
 		}
+	}
+	
+	public function getAttributes() {
+		return $this->attributes;
 	}
 	
 	public function getAttribute($key) {
@@ -100,7 +108,11 @@ abstract class Node implements INode {
 	* @return string
 	*/
 	public function look($tab = '') {
-		return $tab.get_class($this)."\n";
+		return $tab.($this)."\n";
+	}
+	
+	public function __toString() {
+		return get_class($this);
 	}
 }
 
