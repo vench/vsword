@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Class VsWord | wordx</title>
+
+	<script type="text/javascript" src="resources/combined.js?815489563"></script>
+	<script type="text/javascript" src="elementlist.js?1855152628"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="package-vsword.html">vsword<span></span></a>
+						<ul>
+				<li><a href="package-vsword.node.html">node</a>
+						</li>
+				<li><a href="package-vsword.parser.html">parser<span></span></a>
+						<ul>
+				<li><a href="package-vsword.parser.addesed.html">addesed</a>
+						</li>
+							</ul></li>
+				<li><a href="package-vsword.structure.html">structure<span></span></a>
+						<ul>
+				<li><a href="package-vsword.structure.style.html">style</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AttachVsWord.html">AttachVsWord</a></li>
+				<li><a href="class-MyInitNode.html">MyInitNode</a></li>
+				<li class="active"><a href="class-VsWord.html">VsWord</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-IBlockContext.html">IBlockContext</a></li>
+				<li><a href="class-IInitNode.html">IInitNode</a></li>
+				<li><a href="class-ILineContext.html">ILineContext</a></li>
+				<li><a href="class-INode.html">INode</a></li>
+				<li><a href="class-INodeStyle.html">INodeStyle</a></li>
+				<li><a href="class-INodeStyleAdded.html">INodeStyleAdded</a></li>
+				<li><a href="class-INodeTextAdded.html">INodeTextAdded</a></li>
+				<li><a href="class-IPNodeStyle.html">IPNodeStyle</a></li>
+				<li><a href="class-IPNodeStyleAdded.html">IPNodeStyleAdded</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-vsword.html" title="Summary of vsword"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class VsWord</h1>
+
+
+	<div class="description">
+	
+<p>Class VsWord. The main class is responsible for creating the document.</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-vsword.html">vsword</a><br />
+
+				<b>Author:</b>
+				v.raskin<br />
+				<b>Version:</b>
+				1.0.1<br />
+		<b>Located at</b> <a href="source-class-VsWord.html#6-221" title="Go to source code">vsword/VsWord.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-VsWord.html#44-54" title="Go to source code">__construct</a>( <span>string <var>$from</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>string</code><br>$from</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDocument" id="_getDocument">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-WordDirDocumentStructureDocFile.html">WordDirDocumentStructureDocFile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDocument">#</a>
+		<code><a href="source-class-VsWord.html#56-65" title="Go to source code">getDocument</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the object responsible for the construction of DOM model document.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the object responsible for the construction of DOM model document.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-WordDirDocumentStructureDocFile.html">WordDirDocumentStructureDocFile</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getRels" id="_getRels">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-WordDirRelsDirDocumentStructureDocFile.html">WordDirRelsDirDocumentStructureDocFile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getRels">#</a>
+		<code><a href="source-class-VsWord.html#67-76" title="Go to source code">getRels</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the object responsible for the relationship in the document.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the object responsible for the relationship in the document.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-WordDirRelsDirDocumentStructureDocFile.html">WordDirRelsDirDocumentStructureDocFile</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStyle" id="_getStyle">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-WordDirStylesStructureDocFile.html">WordDirStylesStructureDocFile</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getStyle">#</a>
+		<code><a href="source-class-VsWord.html#78-87" title="Go to source code">getStyle</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get the object responsible for the style in the document.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get the object responsible for the style in the document.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-WordDirStylesStructureDocFile.html">WordDirStylesStructureDocFile</a></code></code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAttachImage" id="_getAttachImage">
+
+		<td class="attributes"><code>
+			 public 
+			<code><a href="class-AttachVsWord.html">AttachVsWord</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAttachImage">#</a>
+		<code><a href="source-class-VsWord.html#90-103" title="Go to source code">getAttachImage</a>( <span>string <var>$fileName</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Snap a picture file to the document.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Snap a picture file to the document.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$fileName</var></dt>
+					<dd><code>string</code><br>$fileName</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><code><a href="class-AttachVsWord.html">AttachVsWord</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load" id="_load">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load">#</a>
+		<code><a href="source-class-VsWord.html#105-112" title="Go to source code">load</a>( <span>string <var>$from</var></span> )</code>
+
+		<div class="description short">
+			
+<p>No implementation.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>No implementation.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd><code>string</code><br>$from filename</dd>
+				</dl></div>
+
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><code><a href="class-Exception.html">Exception</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveAs" id="_saveAs">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_saveAs">#</a>
+		<code><a href="source-class-VsWord.html#114-131" title="Go to source code">saveAs</a>( <span>string <var>$to</var> = <span class="php-quote">'document.docx'</span></span> )</code>
+
+		<div class="description short">
+			
+<p>Save current object to docx file.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Save current object to docx file.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$to</var></dt>
+					<dd><code>string</code><br>$to</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="putToZip" id="_putToZip">
+
+		<td class="attributes"><code>
+			 protected 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_putToZip">#</a>
+		<code><a href="source-class-VsWord.html#133-149" title="Go to source code">putToZip</a>( <span><code><a href="class-ZipArchive.html">ZipArchive</a></code> <var>$zip</var></span>, <span>type <var>$list</var></span>, <span>type <var>$dirContext</var> = <span class="php-keyword1">NULL</span></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$zip</var></dt>
+					<dd><code><code><a href="class-ZipArchive.html">ZipArchive</a></code></code><br>$zip</dd>
+					<dt><var>$list</var></dt>
+					<dd><code>type</code><br>$list</dd>
+					<dt><var>$dirContext</var></dt>
+					<dd><code>type</code><br>$dirContext</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getBaseStructureDocClasses" id="_getBaseStructureDocClasses">
+
+		<td class="attributes"><code>
+			 protected 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getBaseStructureDocClasses">#</a>
+		<code><a href="source-class-VsWord.html#151-183" title="Go to source code">getBaseStructureDocClasses</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="autoLoad" id="_autoLoad">
+
+		<td class="attributes"><code>
+			 public static
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_autoLoad">#</a>
+		<code><a href="source-class-VsWord.html#187-192" title="Go to source code">autoLoad</a>( )</code>
+
+		<div class="description short">
+			
+<p>Registers autoload class handler.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Registers autoload class handler.</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="handler" id="_handler">
+
+		<td class="attributes"><code>
+			 public static
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_handler">#</a>
+		<code><a href="source-class-VsWord.html#194-219" title="Go to source code">handler</a>( <span>string <var>$className</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Handler autoload classes.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Handler autoload classes.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$className</var></dt>
+					<dd><code>string</code><br>$className</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>boolean</code><br />
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+	<table class="summary" id="properties">
+	<caption>Properties summary</caption>
+	<tr data-order="structure" id="$structure">
+		<td class="attributes"><code>
+			protected  
+			array
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-VsWord.html#16-20" title="Go to source code"><var>$structure</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$structure" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="document" id="$document">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-WordDirDocumentStructureDocFile.html">WordDirDocumentStructureDocFile</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-VsWord.html#22-25" title="Go to source code"><var>$document</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$document" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="rels" id="$rels">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-WordDirRelsDirDocumentStructureDocFile.html">WordDirRelsDirDocumentStructureDocFile</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-VsWord.html#28-31" title="Go to source code"><var>$rels</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$rels" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="style" id="$style">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-WordDirStylesStructureDocFile.html">WordDirStylesStructureDocFile</a></code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-VsWord.html#33-36" title="Go to source code"><var>$style</var></a>
+		</td>
+		<td class="value"><code></code></td>
+		<td class="description"><div>
+			<a href="#$style" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="stackAttach" id="$stackAttach">
+		<td class="attributes"><code>
+			protected  
+			<code><a href="class-AttachVsWord.html">AttachVsWord</a>[]</code>
+		</code></td>
+
+		<td class="name">
+				<a href="source-class-VsWord.html#38-42" title="Go to source code"><var>$stackAttach</var></a>
+		</td>
+		<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
+		<td class="description"><div>
+			<a href="#$stackAttach" class="anchor">#</a>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		wordx API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

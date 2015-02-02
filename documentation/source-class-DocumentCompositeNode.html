@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+	<meta name="robots" content="noindex" />
+
+	<title>File vsword/node/DocumentCompositeNode.php | wordx</title>
+
+	<script type="text/javascript" src="resources/combined.js?815489563"></script>
+	<script type="text/javascript" src="elementlist.js?1855152628"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="package-vsword.html">vsword<span></span></a>
+						<ul>
+				<li class="active"><a href="package-vsword.node.html">node</a>
+						</li>
+				<li><a href="package-vsword.parser.html">parser<span></span></a>
+						<ul>
+				<li><a href="package-vsword.parser.addesed.html">addesed</a>
+						</li>
+							</ul></li>
+				<li><a href="package-vsword.structure.html">structure<span></span></a>
+						<ul>
+				<li><a href="package-vsword.structure.style.html">style</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AlignNode.html">AlignNode</a></li>
+				<li><a href="class-ArbitraryCompositeNode.html">ArbitraryCompositeNode</a></li>
+				<li><a href="class-ArbitraryNode.html">ArbitraryNode</a></li>
+				<li><a href="class-BodyCompositeNode.html">BodyCompositeNode</a></li>
+				<li><a href="class-BoldStyleNode.html">BoldStyleNode</a></li>
+				<li><a href="class-BrNode.html">BrNode</a></li>
+				<li><a href="class-CompositeNode.html">CompositeNode</a></li>
+				<li class="active"><a href="class-DocumentCompositeNode.html">DocumentCompositeNode</a></li>
+				<li><a href="class-DrawingNode.html">DrawingNode</a></li>
+				<li><a href="class-EmptyCompositeNode.html">EmptyCompositeNode</a></li>
+				<li><a href="class-FontSizeStyleNode.html">FontSizeStyleNode</a></li>
+				<li><a href="class-HyperlinkCompositeNode.html">HyperlinkCompositeNode</a></li>
+				<li><a href="class-ItalicStyleNode.html">ItalicStyleNode</a></li>
+				<li><a href="class-ListCompositeNode.html">ListCompositeNode</a></li>
+				<li><a href="class-ListItemCompositeNode.html">ListItemCompositeNode</a></li>
+				<li><a href="class-Node.html">Node</a></li>
+				<li><a href="class-PageBreakNode.html">PageBreakNode</a></li>
+				<li><a href="class-PCompositeNode.html">PCompositeNode</a></li>
+				<li><a href="class-PPrCompositeNode.html">PPrCompositeNode</a></li>
+				<li><a href="class-RCompositeNode.html">RCompositeNode</a></li>
+				<li><a href="class-RPrCompositeNode.html">RPrCompositeNode</a></li>
+				<li><a href="class-StringNode.html">StringNode</a></li>
+				<li><a href="class-TableColCompositeNode.html">TableColCompositeNode</a></li>
+				<li><a href="class-TableCompositeNode.html">TableCompositeNode</a></li>
+				<li><a href="class-TableRowCompositeNode.html">TableRowCompositeNode</a></li>
+				<li><a href="class-TextNode.html">TextNode</a></li>
+				<li><a href="class-UnderlineStyleNode.html">UnderlineStyleNode</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-vsword.node.html" title="Summary of vsword\node"><span>Package</span></a>
+			</li>
+			<li>
+				<a href="class-DocumentCompositeNode.html" title="Summary of DocumentCompositeNode"><span>Class</span></a>
+			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<pre><code><span id="1" class="l"><a class="l" href="#1"> 1: </a><span class="xlang">&lt;?php</span>
+</span><span id="2" class="l"><a class="l" href="#2"> 2: </a><span class="php-comment">/**
+</span></span><span id="3" class="l"><a class="l" href="#3"> 3: </a><span class="php-comment">* Class DocumentCompositeNode
+</span></span><span id="4" class="l"><a class="l" href="#4"> 4: </a><span class="php-comment">* 
+</span></span><span id="5" class="l"><a class="l" href="#5"> 5: </a><span class="php-comment">*  @version 1.0.2
+</span></span><span id="6" class="l"><a class="l" href="#6"> 6: </a><span class="php-comment">*  @author v.raskin
+</span></span><span id="7" class="l"><a class="l" href="#7"> 7: </a><span class="php-comment">*  @package vsword.node
+</span></span><span id="8" class="l"><a class="l" href="#8"> 8: </a><span class="php-comment">*/</span>
+</span><span id="9" class="l"><a class="l" href="#9"> 9: </a><span class="php-keyword1">class</span> <a id="DocumentCompositeNode" href="#DocumentCompositeNode">DocumentCompositeNode</a> <span class="php-keyword1">extends</span> EmptyCompositeNode {
+</span><span id="10" class="l"><a class="l" href="#10">10: </a>
+</span><span id="11" class="l"><a class="l" href="#11">11: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <a id="_addNode" href="#_addNode">addNode</a>(BodyCompositeNode <span class="php-var">$node</span>) {
+</span><span id="12" class="l"><a class="l" href="#12">12: </a>        <span class="php-keyword1">return</span> parent::addNode(<span class="php-var">$node</span>);
+</span><span id="13" class="l"><a class="l" href="#13">13: </a>    }
+</span><span id="14" class="l"><a class="l" href="#14">14: </a>
+</span><span id="15" class="l"><a class="l" href="#15">15: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_beforeRenderChildrensWord" href="#_beforeRenderChildrensWord">beforeRenderChildrensWord</a>() {
+</span><span id="16" class="l"><a class="l" href="#16">16: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'&lt;w:document'</span>.<span class="php-var">$this</span>-&gt;attributeToString().<span class="php-quote">'&gt;'</span>;
+</span><span id="17" class="l"><a class="l" href="#17">17: </a>    }
+</span><span id="18" class="l"><a class="l" href="#18">18: </a>    
+</span><span id="19" class="l"><a class="l" href="#19">19: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> <a id="_afterRenderChildrensWord" href="#_afterRenderChildrensWord">afterRenderChildrensWord</a>() {
+</span><span id="20" class="l"><a class="l" href="#20">20: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'&lt;/w:document&gt;'</span>;
+</span><span id="21" class="l"><a class="l" href="#21">21: </a>    }
+</span><span id="22" class="l"><a class="l" href="#22">22: </a></span>}</code></pre>
+
+	<div id="footer">
+		wordx API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>

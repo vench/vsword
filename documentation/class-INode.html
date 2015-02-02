@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.8.0" />
+
+	<title>Interface INode | wordx</title>
+
+	<script type="text/javascript" src="resources/combined.js?815489563"></script>
+	<script type="text/javascript" src="elementlist.js?1855152628"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?3505392360" />
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Packages</h3>
+			<ul>
+				<li><a href="package-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="package-vsword.html">vsword<span></span></a>
+						<ul>
+				<li><a href="package-vsword.node.html">node</a>
+						</li>
+				<li><a href="package-vsword.parser.html">parser<span></span></a>
+						<ul>
+				<li><a href="package-vsword.parser.addesed.html">addesed</a>
+						</li>
+							</ul></li>
+				<li><a href="package-vsword.structure.html">structure<span></span></a>
+						<ul>
+				<li><a href="package-vsword.structure.style.html">style</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr />
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-AttachVsWord.html">AttachVsWord</a></li>
+				<li><a href="class-MyInitNode.html">MyInitNode</a></li>
+				<li><a href="class-VsWord.html">VsWord</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-IBlockContext.html">IBlockContext</a></li>
+				<li><a href="class-IInitNode.html">IInitNode</a></li>
+				<li><a href="class-ILineContext.html">ILineContext</a></li>
+				<li class="active"><a href="class-INode.html">INode</a></li>
+				<li><a href="class-INodeStyle.html">INodeStyle</a></li>
+				<li><a href="class-INodeStyleAdded.html">INodeStyleAdded</a></li>
+				<li><a href="class-INodeTextAdded.html">INodeTextAdded</a></li>
+				<li><a href="class-IPNodeStyle.html">IPNodeStyle</a></li>
+				<li><a href="class-IPNodeStyleAdded.html">IPNodeStyleAdded</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="package-vsword.html" title="Summary of vsword"><span>Package</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface INode</h1>
+
+
+	<div class="description">
+	
+<p>Interface INode</p>
+
+	</div>
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-INodeStyle.html">INodeStyle</a>, 
+			<a href="class-INodeStyleAdded.html">INodeStyleAdded</a>, 
+			<a href="class-IPNodeStyle.html">IPNodeStyle</a>, 
+			<a href="class-IPNodeStyleAdded.html">IPNodeStyleAdded</a>, 
+			<a href="class-Node.html">Node</a>
+	</div>
+
+	<div>
+		<h4>Indirect known implementers</h4>
+			<a href="class-AlignNode.html">AlignNode</a>, 
+			<a href="class-ArbitraryCompositeNode.html">ArbitraryCompositeNode</a>, 
+			<a href="class-FontSizeStyleNode.html">FontSizeStyleNode</a>, 
+			<a href="class-HyperlinkCompositeNode.html">HyperlinkCompositeNode</a>, 
+			<a href="class-ItalicStyleNode.html">ItalicStyleNode</a>, 
+			<a href="class-ListCompositeNode.html">ListCompositeNode</a>, 
+			<a href="class-ListItemCompositeNode.html">ListItemCompositeNode</a>, 
+			<a href="class-PageBreakNode.html">PageBreakNode</a>, 
+			<a href="class-PCompositeNode.html">PCompositeNode</a>, 
+			<a href="class-PPrCompositeNode.html">PPrCompositeNode</a>, 
+			<a href="class-RCompositeNode.html">RCompositeNode</a>, 
+			<a href="class-RPrCompositeNode.html">RPrCompositeNode</a>, 
+			<a href="class-ArbitraryNode.html">ArbitraryNode</a>, 
+			<a href="class-StringNode.html">StringNode</a>, 
+			<a href="class-TableColCompositeNode.html">TableColCompositeNode</a>, 
+			<a href="class-TableCompositeNode.html">TableCompositeNode</a>, 
+			<a href="class-TableRowCompositeNode.html">TableRowCompositeNode</a>, 
+			<a href="class-TextNode.html">TextNode</a>, 
+			<a href="class-UnderlineStyleNode.html">UnderlineStyleNode</a>, 
+			<a href="class-BodyCompositeNode.html">BodyCompositeNode</a>, 
+			<a href="class-BoldStyleNode.html">BoldStyleNode</a>, 
+			<a href="class-BrNode.html">BrNode</a>, 
+			<a href="class-CompositeNode.html">CompositeNode</a>, 
+			<a href="class-DocumentCompositeNode.html">DocumentCompositeNode</a>, 
+			<a href="class-DrawingNode.html">DrawingNode</a>, 
+			<a href="class-EmptyCompositeNode.html">EmptyCompositeNode</a>
+	</div>
+
+
+
+	<div class="info">
+		
+		
+		
+		<b>Package:</b> <a href="package-vsword.html">vsword</a><br />
+
+				<b>Author:</b>
+				v.raskin<br />
+				<b>Version:</b>
+				1.0.1<br />
+		<b>Located at</b> <a href="source-class-INode.html#3-14" title="Go to source code">vsword/interfaces.php</a><br />
+	</div>
+
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getWord" id="_getWord">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getWord">#</a>
+		<code><a href="source-class-INode.html#10" title="Go to source code">getWord</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHtml" id="_getHtml">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHtml">#</a>
+		<code><a href="source-class-INode.html#11" title="Go to source code">getHtml</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setParent" id="_setParent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setParent">#</a>
+		<code><a href="source-class-INode.html#12" title="Go to source code">setParent</a>( <span>mixed <var>$parent</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParent" id="_getParent">
+
+		<td class="attributes"><code>
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParent">#</a>
+		<code><a href="source-class-INode.html#13" title="Go to source code">getParent</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		wordx API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
