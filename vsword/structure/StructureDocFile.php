@@ -3,6 +3,7 @@
  * Class StructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 abstract class StructureDocFile {
 	protected $name;

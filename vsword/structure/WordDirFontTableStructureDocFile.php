@@ -3,6 +3,7 @@
  * Class WordDirFontTableStructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 class WordDirFontTableStructureDocFile extends StructureDocFile {
 	public function __construct() {

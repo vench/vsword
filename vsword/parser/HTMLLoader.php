@@ -5,7 +5,9 @@
 /**
  * Class HTMLLoader
  *
+ * @version 1.0.2
  * @author v.raskin
+ * @package vsword.parser
  */
 class HTMLLoader {
 
@@ -34,8 +36,11 @@ class HTMLLoader {
  		return $this->parse($html);
 	}
     
+    /**
+     * 
+     */
     public function parse($html) {
-		$html = htmlspecialchars_decode($html);
+		$html = htmlspecialchars_decode($html, ENT_QUOTES);
 		$i = 0;
 		$length = strlen($html);
 		$target = new ArbitraryCompositeNode('document');

@@ -3,6 +3,7 @@
  * Class DocPropsDirAppStructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 class DocPropsDirAppStructureDocFile  extends StructureDocFile {
 	public function __construct() {

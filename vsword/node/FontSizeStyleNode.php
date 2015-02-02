@@ -6,6 +6,8 @@
  * Description of FontSizeStyleNode
  *
  * @author v.raskin
+ * @version 1.0.1
+ * @package vsword.node
  */
 class FontSizeStyleNode extends Node implements INodeStyle {
 	

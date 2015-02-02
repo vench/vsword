@@ -5,6 +5,7 @@
 * 
 *  @version 1.0.2
 *  @author v.raskin
+*  @package vsword.node
 */
 abstract class CompositeNode extends Node {
 	

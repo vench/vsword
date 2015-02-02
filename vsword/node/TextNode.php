@@ -5,6 +5,7 @@
 * 
 *  @version 1.0.1
 *  @author v.raskin
+ * @package vsword.node
 */
 class TextNode extends Node implements INodeTextAdded, ILineContext {
 	protected $text;
@@ -32,14 +33,17 @@ class TextNode extends Node implements INodeTextAdded, ILineContext {
 	}
 	
 	/**
-	 * 
+	 *  
 	 * @return string
 	 */
 	public function getText() {
 		return $this->text;
 	}
+	 
 	
 	public function getWord() {
 		return '<w:t>'.$this->getText().'</w:t>';
 	}
+	
+	 
 }

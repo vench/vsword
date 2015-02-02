@@ -5,6 +5,7 @@
 *
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.structure.style
 */
 class ListStyle extends Style {
 

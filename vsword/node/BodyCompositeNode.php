@@ -5,6 +5,7 @@
 * 
 *  @version 1.0.1
 *  @author v.raskin
+*  @package vsword.node
 */
 class BodyCompositeNode extends EmptyCompositeNode implements INodeTextAdded {
         

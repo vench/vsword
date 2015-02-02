@@ -5,6 +5,7 @@
 *
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.node
 */
 class TableRowCompositeNode extends EmptyCompositeNode {
 	

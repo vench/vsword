@@ -7,6 +7,7 @@
  * 
  * @version 1.0.1
  * @author v.raskin
+ * @package vsword
  */
 class AttachVsWord {
 
@@ -18,16 +19,34 @@ class AttachVsWord {
 	*/
 	public $rId;
 	
+	/**
+	 *
+	 * @var string 
+	 */
 	public $type;
 	
+	/**
+	 *
+	 * @var string 
+	 */
 	public $target;
 	
+	/**
+	 * 
+	 * @param string $key
+	 * @param string $target
+	 * @param string $type
+	 */
 	public function __construct($key, $target, $type){
 		$this->rId = $key;
 		$this->target = $target;
 		$this->type = $type;
 	} 
 	
+	/**
+	 * 
+	 * @return string
+	 */
 	public function getBaseName() {
 		return basename($this->target);
 	}

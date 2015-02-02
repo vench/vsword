@@ -3,6 +3,7 @@
  * Class WordDirDocumentStructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 class WordDirDocumentStructureDocFile extends StructureDocFile {
 

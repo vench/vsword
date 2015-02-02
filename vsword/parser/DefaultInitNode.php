@@ -5,6 +5,7 @@
 * 
 *  @version 1.0.3
 *  @author v.raskin
+ * @package vsword.parser
 */ 
 class DefaultInitNode implements IInitNode {
 

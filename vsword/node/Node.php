@@ -1,10 +1,11 @@
 <?php 
 
 /**
-*  Class Node
+*  Class Node base node class.
 * 
 *  @version 1.0.1
 *  @author v.raskin
+ * @package vsword.node
 */
 abstract class Node implements INode {
 	
@@ -33,10 +34,18 @@ abstract class Node implements INode {
 		return $this->parent;
 	}
 	
+	/**
+	 * 
+	 * @return string
+	 */
 	public function getName() {
 		return get_class($this);
 	}
 	
+	/**
+	 * 
+	 * @param string $styleId
+	 */
 	public function setStyleID($styleId) {
 		$this->styleId = $styleId;
 	}
@@ -57,20 +66,38 @@ abstract class Node implements INode {
 		$this->parent = $parent;
 	}
 	
+	/**
+	 * 
+	 * @param string $key
+	 * @param string $value
+	 */
 	public function addAttribute($key, $value) {
 		$this->attributes[$key] = $value; 
 	}
 	
+	/**
+	 * 
+	 * @param array $attributes
+	 */
 	public function addAttributes($attributes) {
 		foreach($attributes as $key=>$value) {
 			$this->addAttribute($key, $value);
 		}
 	}
 	
+	/**
+	 * 
+	 * @return array list attributes node
+	 */
 	public function getAttributes() {
 		return $this->attributes;
 	}
 	
+	/**
+	 * 
+	 * @param string $key
+	 * @return string
+	 */
 	public function getAttribute($key) {
 		return isset($this->attributes[$key]) ? $this->attributes[$key] : NULL; 
 	}
@@ -111,6 +138,10 @@ abstract class Node implements INode {
 		return $tab.($this)."\n";
 	}
 	
+	/**
+	 * 
+	 * @return string
+	 */
 	public function __toString() {
 		return get_class($this);
 	}

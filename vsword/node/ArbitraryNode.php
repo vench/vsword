@@ -7,6 +7,7 @@
  *
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.node
  */
 class ArbitraryNode extends Node {
 	protected $name; 

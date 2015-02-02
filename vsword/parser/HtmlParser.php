@@ -4,6 +4,7 @@
 *
 *  @version 1.0.2
 *  @author v.raskin
+ * @package vsword.parser
 */
 class HtmlParser extends Parser {
 	
@@ -80,7 +81,8 @@ class HtmlParser extends Parser {
 	* @return string
 	*/
 	protected function stripString($html) {
-		return str_replace(array('&nbsp;', '&quot;', '&laquo;', '&copy;', '&raquo;'), array(' ', "'", '"', 'C', '"'), $html);
+		str_replace(array('&nbsp;', '&quot;', '&laquo;', '&copy;', '&raquo;'), array(' ', "'", '"', '©', '"'), $html);
+		return  preg_replace('/\&[a-zA-Z0-9]{1,}\;/is', '', $html);  
 	}
 
 	

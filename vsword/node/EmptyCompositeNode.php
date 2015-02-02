@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * Class EmptyCompositeNode
+ *
+ * @version 1.0.1
+ * @author v.raskin
+ * @package vsword.node
+ */
 class EmptyCompositeNode extends CompositeNode {
 	
 	public function getWord() {

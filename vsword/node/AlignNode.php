@@ -6,6 +6,7 @@
  *
  * @version 1.0.0
  * @author v.raskin
+ * @package vsword.node
  */
 class AlignNode extends Node implements IPNodeStyle {
     

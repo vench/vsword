@@ -4,6 +4,7 @@
  * Class WordDirRelsDirDocumentStructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 class WordDirRelsDirDocumentStructureDocFile extends StructureDocFile {
 

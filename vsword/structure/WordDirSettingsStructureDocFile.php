@@ -3,6 +3,7 @@
  * Class WordDirSettingsStructureDocFile
  * @version 1.0.2
  * @author v.raskin
+ * @package vsword.structure
 */
 class WordDirSettingsStructureDocFile extends StructureDocFile {
 	public function __construct() {

@@ -7,6 +7,7 @@
 * 
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.node
 */
 class PPrCompositeNode extends EmptyCompositeNode implements IPNodeStyleAdded {
 

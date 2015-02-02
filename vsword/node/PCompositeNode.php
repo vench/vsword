@@ -4,6 +4,7 @@
 *  Class PCompositeNode
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.node
 */
 class PCompositeNode extends EmptyCompositeNode  implements INodeTextAdded, IBlockContext, IPNodeStyleAdded {
         

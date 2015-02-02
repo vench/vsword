@@ -6,6 +6,7 @@
  *
  * @version 1.0.1
  * @author v.raskin
+ * @package vsword.node
  */
 class DrawingNode extends Node {
 

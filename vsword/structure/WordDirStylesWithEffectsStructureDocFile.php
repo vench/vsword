@@ -3,6 +3,7 @@
 *  Class WordDirStylesStructureDocFile
 *  @version  1.0.2
 *  @author v.raskin
+ * @package vsword.structure
 */
 class WordDirStylesWithEffectsStructureDocFile extends StructureDocFile {
 	public function __construct() {

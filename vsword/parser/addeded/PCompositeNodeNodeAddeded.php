@@ -5,6 +5,7 @@
 *
 *  @version 1.0.1
 *  @author v.raskin
+ * @package vsword.parser.addesed
 */
 class PCompositeNodeNodeAddeded  extends NodeAddeded {
     

@@ -4,10 +4,12 @@
  require_once 'interfaces.php';
 
 /**
-*  Class VsWord
+*  Class VsWord.
+ * The main class is responsible for creating the document. 
 *
-*  @version 1.0.0
+*  @version 1.0.1
 *  @author v.raskin
+*  @package vsword
 */
 class VsWord {
 
@@ -41,7 +43,7 @@ class VsWord {
 	
     /**
     * 
-    * @param type $from
+    * @param string $from 
     * @throws Exception
     */
 	public function __construct($from = NULL) {
@@ -52,6 +54,7 @@ class VsWord {
 	}
 	
 	/**
+	* Get the object responsible for the construction of DOM model document.
 	* @return WordDirDocumentStructureDocFile
 	*/
 	public function getDocument() {
@@ -62,6 +65,7 @@ class VsWord {
 	}
 	
 	/**
+	 * Get the object responsible for the relationship in the document.
 	* @return WordDirRelsDirDocumentStructureDocFile
 	*/
 	public function getRels() {
@@ -72,6 +76,7 @@ class VsWord {
 	}
 	
 	/**
+	* Get the object responsible for the style in the  document.
 	* @return WordDirStylesStructureDocFile
 	*/
 	public function getStyle() {
@@ -83,8 +88,8 @@ class VsWord {
 	
 	 
 	/**
-	 * 
-	 * @param string $fileName
+	 * Snap a picture file to the document.
+	 * @param string $fileName 
 	 * @return AttachVsWord
 	 * @throws Exception
 	 */
@@ -98,8 +103,8 @@ class VsWord {
 	}
 	
     /**
-    * 
-    * @param type $from
+    * No implementation.
+    * @param string $from filename
     * @throws Exception
     */
 	public function load($from) {
@@ -107,7 +112,7 @@ class VsWord {
 	}
 	
     /**
-    * 
+    * Save current object to docx file.
     * @param string $to
     */
 	public function saveAs($to = 'document.docx') {
@@ -144,7 +149,7 @@ class VsWord {
 	}
 	
 	/**
-	* Получить структуру
+	* 
 	* @return array
 	*/
 	protected function getBaseStructureDocClasses() {		
@@ -180,14 +185,14 @@ class VsWord {
 	 
 	
 	/**
-	* 
+	* Registers autoload class handler.
 	*/
 	public static function autoLoad() {
 		spl_autoload_register(array('VsWord', 'handler'));
 	}
 	
 	/**
-	* 
+	* Handler autoload classes.
 	* @param string $className
 	* @return boolean
 	*/

@@ -5,6 +5,7 @@
 * 
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.parser.addesed
 */ 
 class DefNodeAddeded extends NodeAddeded {
     

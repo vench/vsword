@@ -5,6 +5,7 @@
 *
 *  @version 1.0.2
 *  @author v.raskin
+ * @package vsword.parser.addesed
 */
 class ListItemCompositeNodeNodeAddeded  extends NodeAddeded { 
     function addNode( $node,  $target) {  

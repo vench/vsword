@@ -4,6 +4,7 @@
 *  Class RCompositeNode
 *  @version 1.0.0
 *  @author v.raskin
+ * @package vsword.node
 */
 class RCompositeNode extends EmptyCompositeNode implements INodeTextAdded, ILineContext {
     
