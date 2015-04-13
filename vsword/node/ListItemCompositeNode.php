@@ -28,9 +28,9 @@ class ListItemCompositeNode extends PCompositeNode {
 	* 
 	* @return int
 	*/
-       public function getLevel() {
+   public function getLevel() {
 	   return $this->level;
-       }
+   }
 
 	protected function beforeRenderChildrensWord() { 
 		$num = new ArbitraryCompositeNode('w:numPr');   
@@ -39,8 +39,13 @@ class ListItemCompositeNode extends PCompositeNode {
 		    'w:val'=>$this->getLevel(),
 		))); 
 		$num->addNode( new ArbitraryNode('w:numId', array(
-		    'w:val'=>'1',
+		    'w:val'=>1,
 		))); 
+		/*$this->addNode(new ArbitraryNode('w:proofErr', array(
+		    'w:type'=>'spellStart',  
+		)));*/
 		return parent::beforeRenderChildrensWord();
 	}
+	
+ 
 }

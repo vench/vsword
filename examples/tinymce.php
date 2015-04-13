@@ -11,7 +11,7 @@ if(isset($_POST['text'])) {
 	
 	$doc = new VsWord();  
 	$parser = new HtmlParser($doc);  
-	$html = ($_POST['text']);  
+	$html = ($_POST['text']);   
 	$parser->parse($html);   
 	 
 	echo '<pre>'.($doc->getDocument()->getBody()->look()).'</pre>';
@@ -26,8 +26,13 @@ if(isset($_POST['text'])) {
 <title>Simple theme example</title>
 
 <!-- TinyMCE -->
-<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-<script>tinymce.init({selector:'textarea'});</script> 
+<script type="text/javascript" src="tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript">
+	tinyMCE.init({
+		mode : "textareas",
+		theme : "simple"
+	});
+</script>
 <!-- /TinyMCE -->
 
 </head>
