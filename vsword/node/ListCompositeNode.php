@@ -44,7 +44,7 @@ class ListCompositeNode extends EmptyCompositeNode {
     /**
     * @param ListItemCompositeNode $node
     */
-    public function addNode( $node) {
+    public function addNode( $node) { 
 	$node->setStyleID($this->styleId); 
 	$node->setLevel( $this->getLevel() );
         return parent::addNode($node);

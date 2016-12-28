@@ -31,6 +31,11 @@ class TableColCompositeNode extends EmptyCompositeNode implements INodeTextAdded
 		return $node;
 	}
 
+        /**
+         * 
+         * @param INode $node
+         * @return type
+         */
 	public function addNode($node) {
 		return parent::addNode($node);
 	}

@@ -28,6 +28,11 @@ class BodyCompositeNode extends EmptyCompositeNode implements INodeTextAdded {
 	public function addText($text) {   		          
 		return $this->getLastPCompositeNode()->addText($text);            
 	}
+        
+        
+        public function setPageOption($typeOrientation) {
+            $this->addNode( new PageOptionsNode($typeOrientation));
+        }
 	
 	
 	/**
