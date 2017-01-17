@@ -2,6 +2,17 @@
 
  
  require_once 'interfaces.php';
+ 
+ 
+ //fix PHP version 5.3
+ 
+ if(!defined('ENT_XML1')) {
+     define('ENT_XML1', 0);
+ }
+ 
+ 
+
+ 
 
 /**
 *  Class VsWord.
