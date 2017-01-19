@@ -95,7 +95,7 @@ class HtmlParser extends Parser {
 		do {
 			if($node instanceof INodeTextAdded) {
 				$nText = ($node->addText($text));   
-				if($nText instanceof RCompositeNode ) {
+				if($nText->getParent() instanceof PCompositeNode ) {
 					$nText->getParent()->clearTextStyle();
 				}
 				return $nText;
