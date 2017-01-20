@@ -46,7 +46,7 @@ class DefaultInitNode implements IInitNode {
                     return $drawingNode;
                 }
                 break;
-            case 'p': case 'div':
+            case 'p': //case 'div': TODO interpret DIV as PCompositeNode ?
                 return new PCompositeNode();
                 break;
             case 'br':case 'hr':
