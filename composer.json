@@ -1,6 +1,17 @@
 {
     "name": "vench/vs-word",
     "description": "The library allows you to dinamicaly create files *.docx. Jast convert HTML to *.docx",
+    "keywords": ["msword","docx"],
+    "homepage": "http://vench-master.spb.ru/ru/page87/article82",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vench-master",
+            "email": "nowwrit@mail.ru",
+            "homepage": "http://vench-master.spb.ru",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": ">=5.3.0" 
     }, 
