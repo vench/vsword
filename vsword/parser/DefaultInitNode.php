@@ -49,13 +49,16 @@ class DefaultInitNode implements IInitNode {
             case 'p': //case 'div': TODO interpret DIV as PCompositeNode ?
                 return new PCompositeNode();
                 break;
-            case 'br':case 'hr':
+            case 'br': case 'hr':
                 return new BrNode();
                 break;
             case 'span':
+                if (array_key_exists('style',$attributes) && $attributes['style']=='text-decoration: underline;') {
+                    $r = new RCompositeNode(); $r->addTextStyle(new UnderlineStyleNode()); return $r; //support TinyMCE-underline
+                }
                 return new RCompositeNode();
                 break;
-            case 'i':
+            case 'i': case 'em': //browsers interpret <em> as <i> (used for italic in TinyMCE)
                 $r = new RCompositeNode();
                 $r->addTextStyle(new ItalicStyleNode());
                 return $r;
@@ -114,7 +117,7 @@ class DefaultInitNode implements IInitNode {
             case 'a':
                 $link = new HyperlinkCompositeNode();
                 if(isset($attributes['href'])) {  
-                     $linkId = $this->getVsWord()->getAttachHyperLink($attributes['href']);                     
+                     $linkId = $this->getVsWord()->getAttachHyperLink($attributes['href']);
                      $link->setLinkId($linkId);
                 } 
                 return $link;

@@ -15,7 +15,8 @@ class HTMLLoader {
      * @return boolean
      */
     public function noEmptyText($text) {
-        return trim($text) != '';
+        //return trim($text) != ''; (within a paragraph there may be a blank between two formatting parts)
+        return trim($text,"\r\n\t") != '';
     }
 
     public function parseFromUrl($url) {
