@@ -10,7 +10,7 @@
 class TextNode extends Node implements INodeTextAdded, ILineContext {
 	protected $text;
 	
-        
+
 	public function __construct($text = '') {
 		$this->addText($text);  
 	}
