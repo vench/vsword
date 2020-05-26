@@ -10,7 +10,7 @@
 class TextNode extends Node implements INodeTextAdded, ILineContext {
 	protected $text;
 	
-        
+
 	public function __construct($text = '') {
 		$this->addText($text);  
 	}
@@ -42,7 +42,9 @@ class TextNode extends Node implements INodeTextAdded, ILineContext {
 	 
 	
 	public function getWord() {
-		return '<w:t>'.$this->getText().'</w:t>';
+		//space-preserve needed e.g. for "This is <b>bold</b> text." (otherwise text would read "This isboldtext.")
+		return (' '==substr($this->getText(),0,1) || ' '==substr($this->getText(),-1) ? '<w:t xml:space="preserve">' :'<w:t>').
+			   $this->getText().'</w:t>';
 	}
 	
 	 

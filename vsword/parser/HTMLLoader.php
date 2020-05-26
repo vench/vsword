@@ -15,7 +15,9 @@ class HTMLLoader {
      * @return boolean
      */
     public function noEmptyText($text) {
-        return trim($text) != '';
+        //return trim($text) != ''; (within a paragraph there may be a blank between two formatting parts)
+        //Example (TinyMCE generated): "This is <b>bold</b> <em>italic</em> text." should be correctly formatted.
+        return trim($text,"\r\n\t") != '';
     }
 
     public function parseFromUrl($url) {
